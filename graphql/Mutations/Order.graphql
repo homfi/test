@@ -1,0 +1,18 @@
+extend type Mutation
+{
+    createOrder(
+        client_id: Int!
+    ): Order
+    @create
+
+    updateOrder(
+        id: ID!
+        status: OrderStatus
+    ): Order
+    @update
+
+    deleteOrder(
+        id: ID!
+    ): Order
+    @delete
+}

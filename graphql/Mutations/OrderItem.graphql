@@ -1,0 +1,15 @@
+extend type Mutation
+{
+    upsertOrderItem(
+        id: Int
+        order_id: Int!
+        product_id: Int!
+        amount: Int!
+    ): OrderItem
+    @field(resolver:"App\\Resolvers\\OrderItemResolver")
+
+    deleteOrderItem(
+        id: ID!
+    ): OrderItem
+    @delete
+}

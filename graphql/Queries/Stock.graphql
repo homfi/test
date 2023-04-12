@@ -1,0 +1,7 @@
+extend type Query
+{
+    stock(
+        id: ID @eq
+    ): Stock
+    @find
+}

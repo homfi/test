@@ -1,0 +1,15 @@
+extend type Mutation
+{
+    upsertWarehouse(
+        id: Int
+        name: String!
+        location: String!
+        priority: Int!
+    ): Warehouse
+    @upsert
+
+    deleteWarehouse(
+        id: ID!
+    ): Warehouse
+    @delete
+}

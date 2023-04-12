@@ -1,0 +1,38 @@
+mutation updateOrder {
+  updateOrder(id:1, status:PAID) {
+    id
+    status
+  }
+}
+
+query showOrder {
+  order(id: 1) {
+    id
+    status
+    client{
+      name
+    }
+    items {
+      id
+      amount
+      product {
+        id
+        name
+      }
+    }
+    processedItems{
+      id
+      amount
+      product{
+        id
+        name
+      }
+      warehouse{
+        name
+        stocks{
+          amount
+        }
+      }
+    }
+  }
+}

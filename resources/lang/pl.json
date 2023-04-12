@@ -1,0 +1,3 @@
+{
+  "Item amount (:currentAmount) in all warehouses is lower than requested (:requestedAmount)": "Ilość żądanego towaru (:requestedAmount) przekracza bieżącą ilość (:currentAmount) tego towaru we wszystkich magazynach"
+}

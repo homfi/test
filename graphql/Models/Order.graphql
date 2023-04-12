@@ -1,0 +1,10 @@
+type Order {
+    id: ID
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at: DateTime
+    client: Client @belongsTo
+    items: [OrderItem]
+    processedItems: [ProcessedOrderItem]
+    status: OrderStatus
+}
