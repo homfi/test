@@ -1,0 +1,10 @@
+type Product {
+    id: ID
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at: DateTime
+    name: String,
+    price: Float,
+    warehouses: [Warehouse]
+    stocks: [Stock]
+}

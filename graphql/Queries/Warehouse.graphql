@@ -1,0 +1,7 @@
+extend type Query
+{
+    warehouse(
+        id: ID @eq
+    ): Warehouse
+    @find
+}

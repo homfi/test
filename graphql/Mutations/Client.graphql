@@ -1,0 +1,13 @@
+extend type Mutation
+{
+    upsertClient(
+        id: Int
+        name: String!
+    ): Client
+    @upsert
+
+    deleteClient(
+        id: ID!
+    ): Client
+    @delete
+}

@@ -1,0 +1,10 @@
+type ProcessedOrderItem {
+    id: ID
+    created_at: DateTime
+    updated_at: DateTime
+    deleted_at: DateTime
+    order: Order @belongsTo
+    product: Product @belongsTo
+    warehouse: Warehouse @belongsTo
+    amount: Int
+}

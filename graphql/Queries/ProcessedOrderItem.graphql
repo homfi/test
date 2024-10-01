@@ -1,0 +1,7 @@
+extend type Query
+{
+    processedOrderItem(
+        id: ID @eq
+    ): ProcessedOrderItem
+    @find
+}

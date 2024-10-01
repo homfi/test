@@ -1,0 +1,14 @@
+extend type Mutation
+{
+    upsertProduct(
+        id: Int
+        name: String!
+        price: Float!
+    ): Product
+    @upsert
+
+    deleteProduct(
+        id: ID!
+    ): Product
+    @delete
+}

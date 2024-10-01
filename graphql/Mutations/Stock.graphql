@@ -1,0 +1,15 @@
+extend type Mutation
+{
+    upsertStock(
+        id: Int
+        warehouse_id: Int!,
+        product_id: Int!,
+        amount: Int!
+    ): Stock
+    @upsert
+
+    deleteStock(
+        id: ID!
+    ): Stock
+    @delete
+}

@@ -1,0 +1,7 @@
+extend type Query
+{
+    orderItem(
+        id: ID @eq
+    ): OrderItem
+    @find
+}
